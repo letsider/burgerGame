@@ -14,3 +14,9 @@ public class Ingredients {
     {
 		this.nom = n;
     }
+
+
+    public String getNom()
+    {
+    	return this.nom;
+    }

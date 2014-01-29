@@ -17,3 +17,15 @@ public class Burgers {
 		this.nom = n;
 		this.ingredients = i;
     }
+
+    public String getNom()
+    {
+    	return this.nom;
+    }
+
+    public Vector<Ingredients> getIngredients()
+    {
+    	return this.ingredients;
+    }
+
+    
