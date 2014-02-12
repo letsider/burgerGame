@@ -7,12 +7,16 @@ import play.data.validation.Constraints.*;
 public class Burgers {
     @Required
     public String nom;
-    public Vector<Ingredients> ingredients;
+    public String ingredients[];
 
 
-    public Burgers() {}
+    public Burgers() 
+    {
+        this.nom="";
+        this.ingredients= null;
+    }
     
-    public Burgers(String n, Vector<Ingredients> i) 
+    public Burgers(String n, String[] i) 
     {
 		this.nom = n;
 		this.ingredients = i;
@@ -23,9 +27,22 @@ public class Burgers {
     	return this.nom;
     }
 
-    public Vector<Ingredients> getIngredients()
+    public String[] getIngredients()
     {
     	return this.ingredients;
     }
+
+    public boolean empty()
+    {
+        if(this.ingredients==null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
 
     

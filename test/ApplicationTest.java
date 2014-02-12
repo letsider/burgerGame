@@ -1,3 +1,4 @@
+import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -18,6 +19,10 @@ import play.libs.F.*;
 import static play.test.Helpers.*;
 import static org.fest.assertions.Assertions.*;
 
+import models.Burgers;
+import models.Ingredients;
+
+
 
 /**
 *
@@ -29,25 +34,25 @@ public class ApplicationTest {
 
     
 
-    void assert_en_burger(Burgers b, Vector<Ingredients> i) 
+    void assertEmpty(Burgers b)
     {
-
-        assertThat(b).compareIngredients(i);
-
+    	assertTrue(b.empty()==true);
     }
 
 
     @Test
     public void testBurger() 
     {
-        b:declare burger avec une liste ingr;
-        i:une liste dingredient
 
-        assert_en_burger(b,i);
+    	Burgers bigmac = new Burgers();
+
+
+    	assertEmpty(bigmac);
 
 
 
     }
+
 
 
 }
