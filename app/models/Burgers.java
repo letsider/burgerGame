@@ -4,6 +4,8 @@ import java.util.*;
 import javax.validation.*;
 import play.data.validation.Constraints.*;
 
+import play.Logger;
+
 public class Burgers {
     @Required
     public String nom;
@@ -80,15 +82,34 @@ public class Burgers {
             }
         }
 
-        //quand on a fini de comparer les chaînes
+        //quand on a fini de comparer les chaînes on regarde si les ingrédients propsé sont strictement les mêmes(nombres et valeurs)
         if (present == this.ingredients.length && faux==0){
-            System.out.println("Félicitations, vous avez reconstitué le burger !");
+            
+            System.out.println("///////Félicitations, vous avez reconstitué le burger !");
             return true;
         }
         else{
-            System.out.println("Désolé vous n'avez pas trouvé tous les bons ingrédients, vous avez "+faux+" fautes!");
-            return false;
+
+            if(present<this.ingredients.length && faux==0)
+            {
+
+                System.out.println("////////Vous n'avez pas trouvé tout les ingrédients mais vous êtes sur la bonne voie!");
+                return true;
+            }
+            else
+            {
+                System.out.println("///////Désolé vous n'avez pas trouvé tous les bons ingrédients, vous avez "+faux+" fautes!");
+                return false;
+            }
+
+
+            
         }
+
+
+
+
+
     }
 }
 

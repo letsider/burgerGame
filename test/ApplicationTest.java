@@ -82,12 +82,18 @@ public class ApplicationTest {
 
     @Test
     public void testBurgerIngredients(){
-        //test pour un burger avec des ingrédients précis présents dans le burger
+        
         String tab_ingredients[] = {"tomate", "fromage", "salade", "oignon", "steak", "cornichons"};
+        String tab_ingredients2[] = {"tomate", "fromage", "salade"};
         String ingredients_burger[] = {"fromage", "tomate", "salade", "oignon", "steak", "cornichons"};
         Burgers bigmac = new Burgers("bigmac", ingredients_burger);
+        //test pour un burger avec des ingrédients précis présents dans le burger
         assertIngredients(bigmac, tab_ingredients);
+        //test si la liste des ingrédients n'est pas complète mais que ces ingrédients en font partie
+        assertIngredients(bigmac, tab_ingredients2);
     }
+
+
 
 
 }
