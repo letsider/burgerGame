@@ -45,8 +45,8 @@ Seq[Any](format.raw/*1.19*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Wed Jan 29 17:35:29 CET 2014
-                    SOURCE: /home/carriere/Documents/lp/gestionProjet/burgerGame/app/views/index.scala.html
+                    DATE: Wed Feb 12 11:21:00 CET 2014
+                    SOURCE: /home/kemayou/burgerGame/app/views/index.scala.html
                     HASH: b475fb75d27c2095d9bc40a31a0fe69aea776c48
                     MATRIX: 774->1|885->18|922->21|953->44|992->46|1031->55
                     LINES: 26->1|29->1|31->3|31->3|31->3|35->7

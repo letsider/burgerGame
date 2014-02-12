@@ -43,6 +43,11 @@ public class Burgers {
             return false;
         }
     }
+
+    //retourne le nombre d'ingredients
+    public int nb_ingredients(){
+        return this.ingredients.length;
+    }
 }
 
     

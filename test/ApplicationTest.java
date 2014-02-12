@@ -39,16 +39,24 @@ public class ApplicationTest {
     	assertTrue(b.empty()==true);
     }
 
+    void assertNbIngredients(Burgers b, int nbI)
+    {
+        assertThat(b.nb_ingredients()).isEqualTo(nbI);
+    }
+
 
     @Test
     public void testBurger() 
     {
 
-    	Burgers bigmac = new Burgers();
-
-
-    	assertEmpty(bigmac);
-
+    	//test pour un burger vide
+        Burgers bigmac = new Burgers();
+        assertEmpty(bigmac);
+        
+        //test pour un burger avec des ingredients
+        String tab_ingredients[] = {"fromage", "tomate"};
+        Burgers cheese = new Burgers("cheeseburger", tab_ingredients);
+        assertNbIngredients(cheese, 2);
 
 
     }

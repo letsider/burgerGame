@@ -1,10 +1,4 @@
-[0m[[0mdebug[0m] [0m[34mTest run started[0m[0m
-[0m[[0mdebug[0m] [0mTest [33mApplicationTest[0m.[36mtestBurger[0m started[0m
-[0m[[0mdebug[0m] [0mTest [33mApplicationTest[0m.[36mtestBurger[0m finished[0m
-[0m[[0mdebug[0m] [0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.009s[0m[0m
-[0m[[0mdebug[0m] [0mFramework implementation 'org.specs2.runner.Specs2Framework' not present.[0m
 [0m[[0mdebug[0m] [0mSummary for JUnit not available.[0m
 [0m[[0mdebug[0m] [0mSummary for specs2 not available.[0m
-[0m[[0minfo[0m] [0mPassed: Total 1, Failed 0, Errors 0, Passed 1[0m
-[0m[[0mdebug[0m] [0mPassed tests:[0m
-[0m[[0mdebug[0m] [0m	ApplicationTest[0m
+[0m[[0minfo[0m] [0mPassed: Total 0, Failed 0, Errors 0, Passed 0[0m
+[0m[[0minfo[0m] [0mNo tests to run for test:test[0m

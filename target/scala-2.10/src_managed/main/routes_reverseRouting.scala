@@ -1,6 +1,6 @@
-// @SOURCE:/home/carriere/Documents/lp/gestionProjet/burgerGame/conf/routes
+// @SOURCE:/home/kemayou/burgerGame/conf/routes
 // @HASH:9c24f09449355737d0bfbe9ca53280febbd777c7
-// @DATE:Thu Jan 23 08:48:47 CET 2014
+// @DATE:Wed Feb 12 11:21:00 CET 2014
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
