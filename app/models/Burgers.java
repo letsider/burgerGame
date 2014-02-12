@@ -48,6 +48,20 @@ public class Burgers {
     public int nb_ingredients(){
         return this.ingredients.length;
     }
+
+    //test si un ingrédients est dans le burger
+    public boolean isPresent(String ing)
+    {
+        boolean present=false;
+        for(int i=0;i<this.ingredients.length;i++)
+        {
+            if(this.ingredients[i]==ing)
+            {
+                present=true;
+            }
+        }
+        return present;
+    }
 }
 
     

@@ -44,6 +44,11 @@ public class ApplicationTest {
         assertThat(b.nb_ingredients()).isEqualTo(nbI);
     }
 
+    void assertIngredient(Burgers b, String ing)
+    {
+        assertTrue(b.isPresent(ing)==true);
+    }
+
 
     @Test
     public void testBurgerVide() 
@@ -55,12 +60,27 @@ public class ApplicationTest {
     }
 
     @Test
-    public void testBurger(){
+    public void testBurgerNbIngredients(){
         //test pour un burger avec des ingredients
         String tab_ingredients[] = {"fromage", "tomate"};
         Burgers cheese = new Burgers("cheeseburger", tab_ingredients);
         assertNbIngredients(cheese, 2);
     }
+
+    @Test
+    public void testBurgerIngredient(){
+        //test pour un burger avec un ingredient précis
+        String ingredient= "tomate";
+        String tab_ingredients[] = {"fromage", "tomate"};
+        Burgers cheese = new Burgers("cheeseburger", tab_ingredients);
+        assertIngredient(cheese, ingredient);
+    }
+
+
+
+
+
+
 
 
 
