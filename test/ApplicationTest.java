@@ -46,19 +46,20 @@ public class ApplicationTest {
 
 
     @Test
-    public void testBurger() 
+    public void testBurgerVide() 
     {
 
     	//test pour un burger vide
         Burgers bigmac = new Burgers();
         assertEmpty(bigmac);
-        
+    }
+
+    @Test
+    public void testBurger(){
         //test pour un burger avec des ingredients
         String tab_ingredients[] = {"fromage", "tomate"};
         Burgers cheese = new Burgers("cheeseburger", tab_ingredients);
         assertNbIngredients(cheese, 2);
-
-
     }
 
 
