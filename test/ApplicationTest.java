@@ -49,11 +49,15 @@ public class ApplicationTest {
         assertTrue(b.isPresent(ing)==true);
     }
 
+    void assertIngredients(Burgers b, String[] ing)
+    {
+        assertTrue(b.compareIngredients(ing)==true);
+    }
+
 
     @Test
     public void testBurgerVide() 
     {
-
     	//test pour un burger vide
         Burgers bigmac = new Burgers();
         assertEmpty(bigmac);
@@ -76,12 +80,14 @@ public class ApplicationTest {
         assertIngredient(cheese, ingredient);
     }
 
-
-
-
-
-
-
+    @Test
+    public void testBurgerIngredients(){
+        //test pour un burger avec des ingrédients précis présents dans le burger
+        String tab_ingredients[] = {"tomate", "fromage", "salade", "oignon", "steak", "cornichons"};
+        String ingredients_burger[] = {"fromage", "tomate", "salade", "oignon", "steak", "cornichons"};
+        Burgers bigmac = new Burgers("bigmac", ingredients_burger);
+        assertIngredients(bigmac, tab_ingredients);
+    }
 
 
 }

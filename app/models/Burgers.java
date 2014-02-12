@@ -62,6 +62,34 @@ public class Burgers {
         }
         return present;
     }
+
+    //méthode pour comparer 2 listes d'ingrédients
+    public boolean compareIngredients(String[] tab1){
+        int present = 0;//6
+        int faux = 0;//1
+        //pour chaque ingrédient du burger
+        for(int i=0;i<tab1.length;i++){
+            //si l'ingrédient est présent dans le tableau à comparer
+            //if (this.ingredients.contains(tab1[i])){
+            if (Arrays.asList(this.ingredients).contains(tab1[i]))
+            {
+                present++;
+            }
+            else{
+                faux++;
+            }
+        }
+
+        //quand on a fini de comparer les chaînes
+        if (present == this.ingredients.length && faux==0){
+            System.out.println("Félicitations, vous avez reconstitué le burger !");
+            return true;
+        }
+        else{
+            System.out.println("Désolé vous n'avez pas trouvé tous les bons ingrédients, vous avez "+faux+" fautes!");
+            return false;
+        }
+    }
 }
 
     
