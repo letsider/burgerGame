@@ -83,14 +83,14 @@ public class Burgers {
         }
 
         //quand on a fini de comparer les chaînes on regarde si les ingrédients propsé sont strictement les mêmes(nombres et valeurs)
-        if (present == this.ingredients.length && faux==0){
+        if (present == nb_ingredients() && faux==0){
             
             System.out.println("///////Félicitations, vous avez reconstitué le burger !");
             return true;
         }
         else{
 
-            if(present<this.ingredients.length && faux==0)
+            if(present<nb_ingredients() && faux==0)
             {
 
                 System.out.println("////////Vous n'avez pas trouvé tout les ingrédients mais vous êtes sur la bonne voie!");
