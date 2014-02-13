@@ -12,10 +12,24 @@
     <body>
         @content
 
-        <form name="quizz" method="post" action="" class="quizz">
-        	<input type="checkbox" /> <label>Fromage</label>
-        	<input type="checkbox" /> <label>Tomate</label>
-        	<input type="checkbox" /> <label>Steak</label>
+        <h1>Bienvenue dans le burger quiz !</h1>
+
+        <strong>Bigmac</strong>
+        <form name="quizz" method="post" action="/" class="quizz">
+        	<input type="checkbox" name="burger" value="Fromage"/> <label>Fromage</label></br>
+        	<input type="checkbox" name="burger" value="Tomate"/> <label>Tomate</label></br>
+        	<input type="checkbox" name="burger" value="Steak"/> <label>Steak</label></br>
+        	<input type="checkbox" name="burger" value="Salade"/> <label>Salade</label></br>
+        	<input type="checkbox" name="burger" value="Oignon"/> <label>Oignon</label></br>
+        	<input type="checkbox" name="burger" value="Mayonnaise"/> <label>Mayonnaise</label></br>
+        	<input type="checkbox" name="burger" value="Ketchup"/> <label>Ketchup</label></br>
+        	<input type="checkbox" name="burger" value="Sauce BBQ"/> <label>Sauce BBQ</label></br>
+        	<input type="checkbox" name="burger" value="Sauce blanche"/> <label>Sauce blanche</label></br>
+        	<input type="checkbox" name="burger" value="Cornichon"/> <label>Cornichon</label></br>
+
+        	<input type="submit" value="Tester" id="testBurger"/>
+
+
         </form>
 
     </body>
